@@ -8,14 +8,14 @@ body {
     margin-left: 25vw;
     margin-right: 25vw;
     transition: .3s;
-	scrollbar-color: #0f0f0f;
-	scrollbar-width: .5rem;
-	-webkit-touch-callout: none;
+    scrollbar-color: #0f0f0f;
+    scrollbar-width: .5rem;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
-   	-ms-user-select: none;
-   	user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1 {
