@@ -18,6 +18,18 @@ body {
     user-select: none;
 }
 
+body::-webkit-scrollbar {
+	width: .5rem
+}
+
+body::-webkit-scrollbar-track {
+	background: #242424;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #0f0f0f
+}
+
 h1 {
     color:#e0a500;
 }
