@@ -1,14 +1,17 @@
 body {
     background-color: #1c1c1c;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header {
-    background-color:slategrey
+    background-color:slategrey;
     color: #9ba1ff;
 }
 
 .main {
     text-align: center;
     color: #ffffff;
+    font-size: 16px;
+
 }
 
