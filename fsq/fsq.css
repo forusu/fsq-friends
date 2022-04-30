@@ -1,0 +1,65 @@
+body {
+    background: url(alb.jpg) no-repeat center fixed;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 3s;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.main {
+    backdrop-filter: blur(8px);
+    background-color: #1c1c1c;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.status {
+    text-align: center;
+    color: rgb(224, 224, 6);
+    padding: 25px;
+    background-color: #242424;
+}
+
+h1, h2 {
+    color: #e0a500;
+}
+
+a, a:visited {
+    opacity: 100%;
+    color: #e0a500;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.badges {
+    background-color: #242424;
+    padding: 25px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1vh;
+    background-color: #242424;
+    padding: 15px;
+    bottom: 0;
+}
