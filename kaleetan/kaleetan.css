@@ -1,4 +1,14 @@
 body {
     background-color: #1c1c1c;
-    color: RGB(132,179,255)
 }
+
+.header {
+    background-color:slategrey
+    color: #9ba1ff;
+}
+
+.main {
+    text-align: center;
+    color: #ffffff
+}
+
