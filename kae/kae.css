@@ -60,7 +60,7 @@ a:hover {
 }
 
 body::-webkit-scrollbar {
-    width: .5rem
+    width: .5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -83,7 +83,7 @@ badges {
 @media screen and (max-width: 200px) {
   body {
     float: none;
-    zoom: 300%;
+    zoom: 500%;
   }
  @media screen and (max-width: 200px) {
   img {
