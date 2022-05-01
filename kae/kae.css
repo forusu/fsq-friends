@@ -42,7 +42,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  box-shadoww: 5px 5px 5px 5px #FFFFFF;
+  box-shadoww: 5px 5px 5px 5px #fafafa;
 }
 
 a, a:visited {
@@ -53,11 +53,12 @@ a, a:visited {
 
 a:hover {
     opacity: 50%;
+    color: #fafafa;
 }
 
  @media screen and (max-width: 200px) {
   h1 {
-     font-size: 18px
+     font-size: 18px;
   }
      
 @media screen and (max-width: 200px) {
