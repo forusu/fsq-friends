@@ -10,7 +10,7 @@
   animation: spinAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: sideways;
-  margin-bottom: 44.7vh;
+  background-attachment: fixed;
   }
 
   .main {
