@@ -3,7 +3,9 @@ body {
     background-image: url("nice.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center; 
+    background-position: center;
+    scrollbar-color: #fafafa;
+    scrollbar-width: .5rem;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 16px;
@@ -54,6 +56,18 @@ a, a:visited {
 a:hover {
     opacity: 50%;
     color: #fafafa;
+}
+
+body::-webkit-scrollbar {
+    width: .5rem
+}
+
+body::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0f0f0f
 }
 
  @media screen and (max-width: 200px) {
