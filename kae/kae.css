@@ -26,7 +26,7 @@ h2, h3, h4, h5 {
 }
 
 img {
-    border: 5px solid #ff33e2
+  border: 5px solid #ff33e2
 }
 
 
@@ -40,4 +40,10 @@ img {
     float: none;
     zoom: 300%;
   }
+ @media screen and (max-width: 600px) {
+  img {
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 200px;
 }
