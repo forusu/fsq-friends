@@ -24,12 +24,12 @@ drawWrappedBoy = false
 window.onload = function() {
 	canvas = document.getElementById("gc");
 	ctx = canvas.getContext("2d");
-	canvas.width = window.innerWidth-17;
-	canvas.height = window.innerHeight-17;
+	canvas.width = window.innerWidth-18;
+	canvas.height = window.innerHeight-34;
 
 	window.addEventListener('resize', () => {
-		canvas.width = window.innerWidth-17;
-		canvas.height = window.innerHeight-17;
+		canvas.width = window.innerWidth-18;
+		canvas.height = window.innerHeight-34;
 		draw();
 		})
 
