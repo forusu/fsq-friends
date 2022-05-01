@@ -29,7 +29,13 @@ img {
     border: 5px solid #ff33e2
 }
 
+
  @media screen and (max-width: 600px) {
+  h1 {
+     font-size: 20px
+  }
+     
+@media screen and (max-width: 600px) {
   body {
     float: none;
     zoom: 300%;
