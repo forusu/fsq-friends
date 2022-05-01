@@ -1,0 +1,39 @@
+
+  body {
+  background-image: url(hks.jpg) center fixed;
+  background-color: #242424;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  color: #EEEEEE;
+  transition: 3s;
+  animation: spinAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: sideways;
+  }
+
+  .main {
+  margin-top: 2vh;
+  margin-right: 0px;
+  margin-left: 67vw;
+  background-color: #1c1c1c;
+  padding: 25px;
+  }
+
+  h1 {
+  color: #e0a500;
+  }
+  
+  h3 {
+  color: #e04300;
+  }
+  
+  @keyframes spinAnimation {
+  0% {
+      background-position: 0vw;
+	  margin-bottom: 44.7vh;
+  }
+  100% {
+      background-position: 100vw;
+	  margin-bottom: 44.7vh;
+   }
+}
