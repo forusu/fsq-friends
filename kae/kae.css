@@ -26,7 +26,9 @@ h2, h3, h4, h5 {
 }
 
 img {
-  border: 5px solid #ff33e2
+  border: 5px solid #ff33e2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
