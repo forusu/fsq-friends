@@ -14,9 +14,22 @@ h1 {
     font-size: 20px;
 }
 
-h2, h3, h4, h5 {
+h2 {
     color: #fafafa;
-    font-size: 14px;
+    font-size: 18px;
+}
+
+h3 {
+  color: #fafafa;
+  font-size: 18px;
+}    
+
+h4 {
+    color: #fafafa;
+    font-size: 18px;
+
+h5 {
+ color: #fafafa;   
 }
 
 .header {
