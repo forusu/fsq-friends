@@ -1,19 +1,35 @@
 body {
     background-color: #101010;
-    background-image: url(assets/rohi.png);
+    background-image: url(assets/rin3.png);
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
     color: #ffffff;
+    scrollbar-color: #0f0f0f;
+    scrollbar-width: .5rem;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0%;
+    margin-right: 50%;
     margin-top: 0;
     margin-bottom: 0;
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+body::-webkit-scrollbar {
+	width: .5rem
+}
+
+body::-webkit-scrollbar-track {
+	background: #242424;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #0f0f0f
+}
+
 .main {
     background-color: #121212;
-    padding: 15px;
+    padding: 25px;
     margin-top: 0;
     margin-bottom: 0;
     animation: fadeInAnimation ease 3s;
@@ -26,7 +42,7 @@ body {
     text-align: center;
     padding: 15px;
     background-color: #1c1c1c;
-    color: #ffdfa3;
+    color: #e966a8;
 }
 
 audio {
@@ -34,13 +50,17 @@ audio {
     color: #bf173b;
 }
 
-h1, h2 {
+h1 {
+    color: #8f57c4;
+}
+
+h2 {
     color: #bf173b;
 }
 
 a, a:visited {
     opacity: 100%;
-    color: #d65873;
+    color: #8f57c4;
     text-decoration: none;
 }
 
@@ -59,7 +79,7 @@ a:hover {
 
 .badges {
     background-color: #1c1c1c;
-    padding: 25px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -69,6 +89,10 @@ footer {
     background-color: #1c1c1c;
     padding: 5px;
     bottom: 0;
+}
+
+footer a {
+    color: #e966a8;
 }
 
 /* MEDIA QUERIES */
