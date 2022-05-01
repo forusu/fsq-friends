@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    color: #FFFFFF;
+    color: #ff33e2;
     font-size: 14px;
 }
 
@@ -19,5 +19,5 @@ h1, h2, h3, h4, h5 {
 }
 
 img {
-    border: 5px solid #c49dac
+    border: 5px solid #ff33e2
 }
