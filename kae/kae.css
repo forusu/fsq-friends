@@ -42,7 +42,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  box-shadoww: 0px 0px 5px 5px #FFFFFF;
+  box-shadoww: 5px 5px 5px 5px #FFFFFF;
 }
 
 a:hover {
