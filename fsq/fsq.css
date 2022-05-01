@@ -1,39 +1,46 @@
 body {
-    background: url(alb.jpg) no-repeat center fixed;
+    background-color: #101010;
+    background-image: url(assets/rohi.png);
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 0;
     margin-bottom: 0;
-    transition: 3s;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main {
-    backdrop-filter: blur(8px);
-    background-color: #1c1c1c;
-    padding: 25px;
+    background-color: #121212;
+    padding: 15px;
     margin-top: 0;
     margin-bottom: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .status {
     text-align: center;
-    color: rgb(224, 224, 6);
-    padding: 25px;
-    background-color: #242424;
+    padding: 15px;
+    background-color: #1c1c1c;
+    color: #ffdfa3;
+}
+
+audio {
+    background-color: #121212;
+    color: #bf173b;
 }
 
 h1, h2 {
-    color: #e0a500;
+    color: #bf173b;
 }
 
 a, a:visited {
     opacity: 100%;
-    color: #e0a500;
+    color: #d65873;
     text-decoration: none;
 }
 
@@ -51,7 +58,7 @@ a:hover {
 }
 
 .badges {
-    background-color: #242424;
+    background-color: #1c1c1c;
     padding: 25px;
     text-align: center;
 }
@@ -59,7 +66,62 @@ a:hover {
 footer {
     text-align: center;
     margin-top: 1vh;
-    background-color: #242424;
-    padding: 15px;
+    background-color: #1c1c1c;
+    padding: 5px;
     bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:1281px) and (max-width:1920px) {
+
+
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+    body {
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+
+    footer {
+        margin-top: 50vh;
+        bottom: 0%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    body {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    footer {
+        margin-top: 45vh;
+        bottom: 0%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    body {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    footer {
+        margin-top: 50vh;
+        bottom: 0;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    footer {
+        margin-top: 0%;
+        bottom: 0%;
+    }
 }
