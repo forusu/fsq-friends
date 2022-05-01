@@ -5,17 +5,22 @@
 var canvas;
 var ctx;
 
+var framerate_changer = 3
+
 //Input variables
 left=right=0;		//left and right inputs
 jump=0;
 
 // Player variables
-px=py=0;		//player x and y position
-vx=vy=0;		//player x and y velocity
+gay_ified=181;		//rainbow trail (bad for your eyes and mental health)
+xthiccness=30;		//player size on x
+
+px=py=0;			//player x and y position
+vx=vy=0;			//player x and y velocity
 gravity=10;
 speed=14;
-accel=0.04;		//acceleration
-decel=0.2;		//deceleration
+accel=0.04;			//acceleration
+decel=0.2;			//deceleration
 pivotcel=0.1;		//acceleration when changing directions
 drawWrappedBoy = false
 
@@ -37,7 +42,7 @@ window.onload = function() {
 	document.addEventListener("keydown",inputPressed);
 	document.addEventListener("keyup",inputReleased);
 
-	var framerate = 60;
+	var framerate = 60 * framerate_changer;
 	setInterval(process,1000/framerate);
 }
 
@@ -95,32 +100,32 @@ function physics() {
 		}
 	}
 
-	vx = vx + (intMove - vx) * cel;
+	vx = vx + (intMove - vx) * cel / framerate_changer;
 
 
 	// Gravity
 	if(py < canvas.height-45) {
-		vy += 0.25;
+		vy -= 0.25 / framerate_changer;
 	}
 	else {
 		vy = 0;
 		if(jump==1) {
-			vy = -10;
+			vy = 10;
 		}
 	}
 
 
-	px += vx;
-	py += vy;
+	px += vx / framerate_changer;
+	py -= vy / framerate_changer;
 	py = Math.min(py, canvas.height-45);
 
 	// Wrapping logic
-	if(px < 0 || px > canvas.width-30) {
+	if(px < 0 || px > canvas.width-xthiccness) {
 		drawWrappedBoy = true;
 		if(px < 0-30) {
 			px += canvas.width;
 		}
-		if(px > canvas.width-30) {
+		if(px > canvas.width-xthiccness) {
 			px -= canvas.width;
 		}
 	}
@@ -128,14 +133,15 @@ function physics() {
 
 
 function draw() {
-	ctx.fillStyle = 'DimGray';
+	gay_ified += 3 / framerate_changer;
+	ctx.fillStyle = 'rgba(120,120,120,0.02)';
 	ctx.fillRect(0,0,canvas.width,canvas.height);
-	ctx.fillStyle = 'DarkTurquoise';
-	ctx.fillRect(px,py,30,30);
+	ctx.fillStyle = 'hsl(' + gay_ified + ',100%,41%)';
+	ctx.fillRect(px,py,xthiccness,30);
 
 	if (drawWrappedBoy) {
-		ctx.fillStyle = 'DarkTurquoise';
-		ctx.fillRect(px+canvas.width,py,30,30);
+		ctx.fillStyle = 'hsl(' + gay_ified + ',100%,41%)';
+		ctx.fillRect(px+canvas.width,py,xthiccness,30);
 	}
 }
 
