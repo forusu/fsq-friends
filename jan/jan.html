@@ -1,1 +1,143 @@
-Hello, I'm Jan. If you're reading this rn, that means that Jan has been to lazy to start working on this page. Make sure to flame him on discord for that J4N#1706
+<html>
+<canvas id="gc" width=727 height=727></canvas>
+<script>
+var canvas;
+var ctx;
+
+//Input variables
+left=right=0;		//left and right inputs
+jump=0;
+
+// Player variables
+px=py=0;		//player x and y position
+vx=vy=0;		//player x and y velocity
+gravity=10;
+speed=14;
+accel=0.04;		//acceleration
+decel=0.2;		//deceleration
+pivotcel=0.1;		//acceleration when changing directions
+drawWrappedBoy = false
+
+
+
+window.onload = function() {
+	canvas = document.getElementById("gc");
+	ctx = canvas.getContext("2d");
+	canvas.width = window.innerWidth-17;
+	canvas.height = window.innerHeight-17;
+
+	window.addEventListener('resize', () => {
+		canvas.width = window.innerWidth-17;
+		canvas.height = window.innerHeight-17;
+		draw();
+		})
+
+
+	document.addEventListener("keydown",inputPressed);
+	document.addEventListener("keyup",inputReleased);
+
+	var framerate = 60;
+	setInterval(process,1000/framerate);
+}
+
+
+function inputPressed(evt) {
+	switch(evt.keyCode) {
+		case 37:
+			left = -1;
+			break;
+		case 39:
+			right = 1;
+			break;
+		case 38:
+			jump = 1;
+			break;
+   	 }
+}
+
+function inputReleased(evt) {
+	switch(evt.keyCode) {
+		case 37:
+			left = 0;
+			break;
+		case 39:
+			right = 0;
+			break;
+		case 38:
+			jump = 0;
+			break;
+   	 }
+}
+
+
+function process() {
+	physics();
+	draw();
+}
+
+
+function physics() {
+
+	// Intended Movement and acceleration
+	var intMove = (left + right) * speed;
+	var cel = 0;
+
+	if(Math.sign(intMove)*Math.sign(vx) == -1) {
+		cel = pivotcel;
+	}
+	else {
+		if(Math.abs(intMove) > Math.abs(vx)) {
+			cel = accel;
+		}
+		else {
+			cel = decel;
+		}
+	}
+
+	vx = vx + (intMove - vx) * cel;
+
+
+	// Gravity
+	if(py < canvas.height-45) {
+		vy += 0.25;
+	}
+	else {
+		vy = 0;
+		if(jump==1) {
+			vy = -10;
+		}
+	}
+
+
+	px += vx;
+	py += vy;
+	py = Math.min(py, canvas.height-45);
+
+	// Wrapping logic
+	if(px < 0 || px > canvas.width) {
+		drawWrappedBoy = true;
+		if(px < 0-30) {
+			px += canvas.width;
+		}
+		if(px > canvas.width-30) {
+			px -= canvas.width;
+		}
+	}
+}
+
+
+function draw() {
+	ctx.fillStyle = 'DimGray';
+	ctx.fillRect(0,0,canvas.width,canvas.height);
+	ctx.fillStyle = 'DarkTurquoise';
+	ctx.fillRect(px,py,30,30);
+
+	if (drawWrappedBoy) {
+		ctx.fillStyle = 'DarkTurquoise';
+		ctx.fillRect(px+canvas.width,py,30,30);
+	}
+}
+
+</script>
+
+</html>
