@@ -18,3 +18,14 @@ h1, h2, h3, h4, h5 {
 img {
     border: 5px solid #9ba1ff;
 }
+
+/* FROM FINESSE */
+a, a:visited {
+    opacity: 100%;
+    color: #9ba1ff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
