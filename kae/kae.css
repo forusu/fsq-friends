@@ -45,6 +45,15 @@ img {
   box-shadoww: 0px 0px 5px 5px #FFFFFF;
 }
 
+a:hover {
+    opacity: 50%;
+    color: #fafafa;
+}
+
+a:link {
+   color: #fafafa;
+}
+
  @media screen and (max-width: 200px) {
   h1 {
      font-size: 18px
