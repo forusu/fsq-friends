@@ -114,7 +114,7 @@ function physics() {
 	py = Math.min(py, canvas.height-45);
 
 	// Wrapping logic
-	if(px < 0 || px > canvas.width) {
+	if(px < 0 || px > canvas.width-30) {
 		drawWrappedBoy = true;
 		if(px < 0-30) {
 			px += canvas.width;
