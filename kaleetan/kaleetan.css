@@ -1,16 +1,20 @@
 body {
-    background-color: #1c1c1c;
-    font-family: 'Times New Roman', Times, Serif;
-}
-
-h1, h2 {
-    color: #9ba1ff;
-}
-
-.main {
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-
+    font-size: 16px;
+    color: #c9c9c9
 }
 
+h1, h2, h3, h4, h5 {
+    color: #331563;
+    font-size: 22px;
+}
+
+.header {
+    font-size: 12px;
+}
+
+img {
+    border: 5px solid #331563
+}

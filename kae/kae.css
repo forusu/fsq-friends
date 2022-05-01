@@ -1,0 +1,20 @@
+body {
+    background-color: #f782a4;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 16px;
+    color: #f782a4;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.header {
+    font-size: 20px;
+}
+
+img {
+    border: 5px solid #fdaecd
+}
