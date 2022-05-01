@@ -30,10 +30,6 @@ img {
 }
 
  @media screen and (max-width: 600px) {
-  h1 {
-    font-size: 16;
-}
- @media screen and (max-width: 600px) {
   body {
     float: none;
     zoom: 300%;
