@@ -1,6 +1,7 @@
-  body {
+body {
   background-image: url(hks.jpg);
   background-position: center;
+  background-attachment: fixed;
   background-color: #242424;
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
@@ -8,31 +9,94 @@
   transition: 3s;
   animation: spinAnimation ease 3s;
   animation-iteration-count: 1;
-  animation-fill-mode: sideways;
-  background-attachment: fixed;
+  animation-fill-mode: forward;
   }
-
-  .main {
+  
+.main {
   margin-top: 2vh;
-  margin-right: 0px;
+  margin-right: 0vw;
   margin-left: 67vw;
   background-color: #1C1C1CD9;
   padding: 25px;
-  }
+}
 
-  h1 {
+h1 {
   color: #e0a500;
-  }
+}
   
-  h3 {
+h3 {
   color: #e04300;
-  }
+}
+    
+a, a:visited {
+  opacity: 100%;
+  color: #e0a500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e04300;
+}
+
   
-  @keyframes spinAnimation {
+@keyframes spinAnimation {
   0% {
-      background-position: 0vw;
+    background-position: 0vw;
   }
   100% {
-      background-position: 100vw;
+    background-position: 100vw;
    }
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:1281px) and (max-width:1920px) {
+  .main {
+    margin-right: 0vw;
+    margin-left: 67vw;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+  .main {
+    margin-right: 0vw;
+    margin-left: 67vw;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .main {
+    margin-left: 0vw;
+    margin-right: 0vw;
+	background-color: #1C1C1CB3;
+  }
+  
+  body {
+	background-image: url(lace.png);
+	background-repeat: no-repeat;
+	background-color: #F7F7F7;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+  .main {
+    margin-left: 67vw;
+    margin-right: 0vw;
+  }
+}
+
+@media (min-width:200px) and (max-width:768px) {
+
+  .main {
+    margin-left: 0vw;
+    margin-right: 0vw;
+	background-color: #1C1C1CB3;
+  }
+  
+  body {
+	background-image: url(lace.png);
+	background-repeat: no-repeat;
+	background-color: #F7F7F7;
+  }
 }
