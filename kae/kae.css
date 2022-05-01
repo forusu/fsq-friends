@@ -1,7 +1,7 @@
-body {
-    background: url(wallhaven-472oze.jpg) center;
-    color: #a176b6;
-    font-family: 'Courier New', Courier, monospace;
+.body {
+    background: url(wallhaven-472oze.jpg) no-repeat center fixed;
+    color: #;
+    font-family: 'Iosevka', monospace;
     margin-left: 50%;
     margin-right: 50%;
     margin-top: 60;
