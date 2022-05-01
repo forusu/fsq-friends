@@ -19,3 +19,11 @@ body {
     padding: 25px;
     background-color: #ffffff;
 }
+
+footer {
+    text-align: center;
+    margin-top: 1vh;
+    background-color: #079ed2;
+    padding: 15px;
+    bottom: 0;
+}
