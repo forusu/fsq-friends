@@ -1,5 +1,4 @@
 body {
-    border-radius: 25px;
     background-image: url("nice.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,7 +7,6 @@ body {
     text-align: center;
     font-size: 16px;
     color: #fafafa;
-    box-shadow: 0px 0px 5px #ffffff;
 }
 
 }
@@ -31,6 +29,8 @@ img {
   border: 5px solid #ff33e2;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
+  box-shadoww: 0px 0px 10px #FFFFFF;
 }
 
 
