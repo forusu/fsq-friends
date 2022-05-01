@@ -1,5 +1,5 @@
 body {
-    background-image: url("coolio.jpg");
+    background-image: url("coolio.jpg"), center;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 16px;
