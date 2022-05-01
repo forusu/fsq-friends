@@ -1,6 +1,7 @@
 
   body {
-  background-image: url(hks.jpg) center fixed;
+  background-image: url(hks.jpg);
+  background-position: center;
   background-color: #242424;
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
@@ -9,6 +10,7 @@
   animation: spinAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: sideways;
+  margin-bottom: 44.7vh;
   }
 
   .main {
@@ -30,10 +32,8 @@
   @keyframes spinAnimation {
   0% {
       background-position: 0vw;
-	  margin-bottom: 44.7vh;
   }
   100% {
       background-position: 100vw;
-	  margin-bottom: 44.7vh;
    }
 }
