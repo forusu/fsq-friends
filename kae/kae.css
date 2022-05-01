@@ -1,9 +1,10 @@
 body {
+    backdrop-filter: blur(14px);
     background-image: url("wallhaven.jpg");
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 16px;
-    color: #e5c0c9;
+    color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5 {
