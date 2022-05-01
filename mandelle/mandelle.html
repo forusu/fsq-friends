@@ -4,56 +4,62 @@
         <link rel="stylesheet" href="index.css"/>
         <script src="my.js"></script>
         <title>Mandellembs Website!</title>
+        <style>div.background {
+          background: url(carsign.jpg) repeat;
+          border: 2px solid rgb(58, 58, 58);
+        }
+        
+        div.transbox {
+          background-color: #ffffff;
+          border: 1px solid rgb(0, 0, 0);
+          opacity: 0.73;
+        }
+        
+        div.transbox p {
+          margin: 2%;
+          font-weight: bold;
+          color: #000000;
+        }</style>
 </head>
     <body>
-        <img src="carsign.jpg">
-        <p class="user">Hey im Mandellemb!</p>
-        <p class="desc">I love many things and tend to switch hobbies a whole lot.</p>
-        <p class="desc">A few of my favorite things are cars, guitar, architecture and having nice walks.</p>
-        <p class="whisper">psst, I also love food even though im skinnier than a skeleton</p>
-        <!-- the following was taken from a website-->
+      <div class="background">
+        <div class="transbox">
+          <p>Mandellemb.</p>
+          
+          <p class="desc">I love many things and tend to switch hobbies a whole lot.</p>
+          <p class="desc">A few of my favorite things are cars, guitar, architecture and having nice walks.</p>
+          <p class="desc">Current skills I am improving right now are sim drifting and guitar, </p>
+        </div>
+      </div>
 
         <!-- Container for the image gallery -->
 <div class="container">
-
+<p>Car Pictures. CLICK TO VIEW</p>
     <!-- Full-width images with number text -->
     <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-        <img src="carblue.jpg" style="width:80%">
+        <img src="carblue.jpg" style="width:72%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-        <img src="carbmw.jpg" style="width:80%">
+        <img src="carbmw.jpg" style="width:72%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-        <img src="cardrift.jpg" style="width:80%">
+        <img src="cardrift.jpg" style="width:72%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-        <img src="carmoun.jpg" style="width:80%">
+        <img src="carmoun.jpg" style="width:72%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-        <img src="carpaint.jpg" style="width:80%">
+        <img src="carpaint.jpg" style="width:72%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-        <img src="carin.jpg" style="width:80%">
+        <img src="carin.jpg" style="width:72%">
     </div>
   
-  
-    <!-- Image text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <!-- Thumbnail images -->
     <div class="row">
       <div class="column">
         <img class="demo cursor" src="carblue.jpg" style="width:100%" onclick="currentSlide(1)">
@@ -75,7 +81,18 @@
       </div>
     </div>
   </div>
+<p>Videos</p>
+  <video class="video" width="800" height="450" controls>
+    <source src="videoy.mp4" type="video/mp4">
+    <source src="videoy.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
 
-  <p class="norm">These are pictures of my cars in assetto corsa :)</p>
+  <video class="video" width="360" height="450" controls>
+    <source src="Project 1.mov" type="video/mp4">
+    <source src="Project 1.mov" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+
     </body>
 </html>
