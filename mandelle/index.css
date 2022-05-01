@@ -110,8 +110,7 @@ body {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 14%;
-  margin-left: 40px;
+  width: 11.5%;
 }
 
 /* Add a transparency effect for thumnbail images */
