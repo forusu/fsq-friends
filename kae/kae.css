@@ -32,6 +32,6 @@ img {
  @media screen and (max-width: 600px) {
   .topnav a {
     float: none;
-    zoom: 150%;
+    zoom: 300%;
   }
 }
