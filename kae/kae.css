@@ -34,17 +34,17 @@ img {
 }
 
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 200px) {
   h1 {
      font-size: 20px
   }
      
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200px) {
   body {
     float: none;
     zoom: 300%;
   }
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 200px) {
   img {
    margin-left: auto;
    margin-right: auto;
