@@ -8,7 +8,7 @@ body {
     margin-left: 25vw;
     margin-right: 25vw;
     transition: .3s;
-    scrollbar-color: #0f0f0f;
+    scrollbar-color: #e0a500;
     scrollbar-width: .5rem;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #0f0f0f
+	background: #e0a500
 }
 
 h1 {
