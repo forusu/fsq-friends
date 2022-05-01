@@ -1,11 +1,10 @@
-
   body {
   background-image: url(hks.jpg);
   background-position: center;
   background-color: #242424;
   font-family: 'Courier New', Courier, monospace;
   text-align: left;
-  color: #EEEEEE;
+  color: #FAFAFA;
   transition: 3s;
   animation: spinAnimation ease 3s;
   animation-iteration-count: 1;
@@ -17,7 +16,7 @@
   margin-top: 2vh;
   margin-right: 0px;
   margin-left: 67vw;
-  background-color: #1c1c1c;
+  background-color: #1C1C1CD9;
   padding: 25px;
   }
 
