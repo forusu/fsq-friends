@@ -3,6 +3,7 @@ body {
     background-image: url(assets/rin3.png);
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
+    background-size: cover;
     color: #ffffff;
     scrollbar-color: #0f0f0f;
     scrollbar-width: .5rem;
