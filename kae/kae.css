@@ -1,9 +1,9 @@
 body {
-    background-color: #f782a4;
+    background-color: #e5c0c9;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 16px;
-    color: #f782a4;
+    color: #e5c0c9;
 }
 
 h1, h2 {
@@ -16,5 +16,5 @@ h1, h2 {
 }
 
 img {
-    border: 5px solid #fdaecd
+    border: 5px solid #c49dac
 }
