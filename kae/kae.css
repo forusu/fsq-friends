@@ -45,13 +45,14 @@ img {
   box-shadoww: 5px 5px 5px 5px #FFFFFF;
 }
 
-a:hover {
-    opacity: 50%;
+a, a:visited {
+    opacity: 100%;
     color: #fafafa;
+    text-decoration: none;
 }
 
-a:link {
-   color: #fafafa;
+a:hover {
+    opacity: 50%;
 }
 
  @media screen and (max-width: 200px) {
