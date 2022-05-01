@@ -2,7 +2,7 @@ body {
     background-attachment: scroll;
     background-image: url("nice.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center; 
     font-family: 'Quicksand', sans-serif;
     text-align: center;
