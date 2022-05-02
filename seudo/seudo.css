@@ -17,7 +17,7 @@ h1{
 
 a{
 
-    color:#ffff4f;
+    color:#ec8e00;
     text-decoration: none;
     
 }
@@ -25,4 +25,26 @@ a{
 a:hover{
 
     text-decoration:underline;
+}
+
+.content{
+
+    background-color:#1f1f1f;
+    margin:4%;
+
+}
+.content:hover{
+
+    background-color:#ffff4f;
+}
+
+.gotcha{
+
+    color:#1f1f1f;
+    text-align:center;
+}
+
+.metacontent{
+
+    margin:4px;
 }
