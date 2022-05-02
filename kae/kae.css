@@ -75,17 +75,17 @@ badges {
     border-radius: 0px;
 }
 
- @media screen and (max-width: 200px) {
+ @media screen (min-width: 298px) and (max-width: 618px){
   h1 {
-     font-size: 18px;
+     font-size: 20px;
   }
      
-@media screen and (max-width: 200px) {
+@media (min-width: 298px) and (max-width: 618px) {
   body {
     float: none;
     zoom: 500%;
   }
- @media screen and (max-width: 200px) {
+ @media (min-width: 298px) and (max-width: 618px) {
   img {
    margin-left: auto;
    margin-right: auto;
