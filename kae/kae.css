@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
+    background-size: cover;
     scrollbar-color: #FFfafafa;
     scrollbar-width: .5rem;
     font-family: 'Quicksand', sans-serif;
