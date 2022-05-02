@@ -64,11 +64,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #242424;
+    background: #FF242424;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #0f0f0f
+    background: #FF0f0f0f
 }
 
 badges {
