@@ -28,19 +28,13 @@ section{
     box-shadow: 5px 5px 20px var(--cyber-grape);
     border-radius: 4px;
     width: 60vw;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    position: sticky;
-    top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid var(--cyber-grape);
 }
 
 section {
     filter: opacity(0.9);
-}
-
-section:nth-child(2n){
-    top: calc(2*40px)
 }
 
 section h1{
