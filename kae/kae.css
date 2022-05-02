@@ -83,7 +83,7 @@ badges {
 @media (min-width: 298px) and (max-width: 618px) {
   body {
     float: none;
-    background-size:cover 
+    background-size: cover; 
   }
     
  @media (min-width: 298px) and (max-width: 618px) {
