@@ -1,0 +1,28 @@
+body{
+    color: #ffff4f;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+
+    text-align: center;
+}
+.main{
+    color: #ffffff;
+    background-color:rgb(43, 43, 43);
+    text-align: center;
+    margin: 70px;
+}
+
+a{
+
+    color:#ffff4f;
+    text-decoration: none;
+    
+}
+
+a:hover{
+
+    text-decoration:underline;
+}
