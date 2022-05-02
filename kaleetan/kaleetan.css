@@ -6,6 +6,10 @@ body {
     color: #c9c9c9
 }
 
+.home {
+    text-align: left;
+}
+
 h1, h2, h3, h4, h5 {
     color: #9ba1ff;
     font-size: 22px;
