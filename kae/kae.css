@@ -83,8 +83,9 @@ badges {
 @media (min-width: 298px) and (max-width: 618px) {
   body {
     float: none;
-    zoom: 500%;
+    background-size:cover 
   }
+    
  @media (min-width: 298px) and (max-width: 618px) {
   img {
    margin-left: auto;
