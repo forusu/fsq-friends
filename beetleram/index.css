@@ -15,9 +15,6 @@
     align-items: center;
     font-family: 'Lora', serif;
 }
-body{ 
-    background-color: black;
-}
 
 span{
     display: inline;
@@ -203,3 +200,9 @@ nav a:hover{
     margin-top: 3px;
     text-indent: 0px;
 }
+
+#background-canvas{
+    position: fixed;
+    z-index: -100;
+}
+
