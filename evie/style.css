@@ -1,0 +1,113 @@
+* {
+    --white: #fbf5ef;
+    --blue: #3B5DC9;
+    --darkBlue: #29366F;
+    --yellow: #ffcd75;
+    --black: #333c57;
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black);
+    color: black;
+    font-size: 20px; 
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7e%2Fa4%2Fc6%2F7ea4c6ef55c57d049c6b11f09397cf52.gif&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header"
+    "headline"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    height: 100vh;
+   
+}
+
+.moonContainer{
+    display: grid;
+    place-items: center;
+}
+
+#mon {
+    width: 50vh;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    grid-area: main;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.headline {
+    display: grid;
+    grid-area: headline;
+    place-items: center;
+    color: white;
+    background-color: var(--yellow);
+}
+
+#mon {
+    max-width: 100%;
+}
+
+.content {
+    padding: 1%;
+    margin: 2%;
+    background-color: var(--darkBlue);
+    border-style: solid;
+    border-color: var(--yellow);
+}
+
+h2 {
+    color: var(--yellow);
+}
+
+#gallery {
+    text-decoration: none;
+}
+
+#gallery:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hyperlinks{
+    color: var(--yellow);
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+.hyperlinks:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1366px) {
+    header {
+        grid-area: header;
+        height: 100vh;
+    }
+
+    .moonContainer {
+        display: grid;
+        place-content: center;
+    }
+}

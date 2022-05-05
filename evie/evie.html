@@ -4,103 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            --white: #fbf5ef;
-            --blue: #3B5DC9;
-            --darkBlue: #29366F;
-            --yellow: #ffcd75;
-            --black: #333c57;
-
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            background-color: var(--black);
-            color: black;
-            font-size: 20px; 
-            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7e%2Fa4%2Fc6%2F7ea4c6ef55c57d049c6b11f09397cf52.gif&f=1&nofb=1);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .container{
-            display: grid;
-            grid-template-rows: repeat(3, auto);
-            grid-template-areas:
-            "header"
-            "headline"
-            "main"
-            "footer";
-        }
-
-        header {
-            grid-area: header;
-            height: 100vh;
-           
-        }
-
-        .moonContainer{
-            display: grid;
-            place-items: center;
-        }
-
-        #mon {
-            width: 50vh;
-        }
-
-        main {
-            grid-area: main;
-            color: white;
-            display: grid;
-            place-items: center;
-        }
-        .headline {
-            display: grid;
-            grid-area: headline;
-            place-items: center;
-            color: white;
-            background-color: var(--yellow);
-        }
-
-        #mon {
-            max-width: 100%;
-        }
-
-        .content {
-            padding: 1%;
-            margin: 2%;
-            background-color: var(--darkBlue);
-            border-style: solid;
-            border-color: var(--yellow);
-        }
-
-        a{
-            color: var(--yellow);
-            text-decoration: none;
-            display: grid;
-            place-items: center;
-        }
-        
-        a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
-        @media only screen and (max-width: 1366px) {
-            header {
-                grid-area: header;
-                height: 100vh;
-            }
-
-            .moonContainer {
-                display: grid;
-                place-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Epi's Lunar Space</title>
 </head>
 <body>
@@ -113,26 +17,43 @@
         </header>
 
         <div class="headline">
-            <h2>Epi's Lunar Space</h2>
+           <!-- <h2>Epi's Lunar Space</h2> -->
         </div>
 
         <main>
             <div class="content">
-                <p>Hi!, I'm a studying queer software engineer in HS trying my best to live and serve people in however way I can.</p>
-                <p>This site is suppose to be a small and easy web project i can use to experiment with designing different types of design</p>
+                <h1>☀️ Epi's Lunar Space ☀️</h1>
+
+                <h3>🕴️ A bit about me 🕴️</h3>
+                <p>Hi!, I'm a studying queer software engineer in HS that does art sometimes and trying my best to live and serve people in however way I can.</p>
+                <p>This site is suppose to be a small and easy web project i can use to experiment with different types of web design</p>
                 <p>Thanks Mia for inviting me!!.</p>   
                 
-                <a href="https://forusu.github.io/fsq-friends/fsq/fsq.html">Go to the previous site!</a>
-                <a href="https://forusu.github.io/fsq-friends/">Go to the homepage!</a>
-                <a href="https://forusu.github.io/fsq-friends/callie/callie.html">Go to the next site!</a>
-            </div>
+                <h3>♟️ My interests/hobbies ♟️</h3>
+                <ul>
+                    <li>Programming</li>
+                    <li>Politics</li>
+                    <li>History</li>
+                    <li>Urban Planning</li>
+                    <li>Grand Strategy Games</li>
+                    <li>Reading</li>
+                </ul>
 
-            <div class="hyperlinks">
+                <h3>📕 Favourite Books 📕</h3>
+                <ul>
+                    <li>Dune Messiah</li>
+                    <li>Aksi Massa</li>
+                    <li>Jakarta Method</li>
+                    <li>Araling Aktibista (ARAK)</li>
+                </ul>
+
+                <a href="gallery.html" id="gallery"><h2>🖼️ Gallery 🖼️</h2></a>
+
+                <a href="https://forusu.github.io/fsq-friends/fsq/fsq.html" class="hyperlinks">[previous site]</a>
+                <a href="https://forusu.github.io/fsq-friends/" class="hyperlinks">[homepage]</a>
+                <a href="https://forusu.github.io/fsq-friends/callie/callie.html" class="hyperlinks">[next site]</a>
             </div>
          </main>
-
     </div>
-
-
 </body>
 </html>
