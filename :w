@@ -8,7 +8,7 @@ function canvasInit() {
 
 let triangles = []
 // let cursor = new Triangle({ _x: mouseX, _y: mouseY, _size: 40, _rotSpeed: 0.2, _lifetime: -1, _rotSpeed: 0, _colourH: 0})
-let cursor = new Cursor({ _x: mouseX, _y: mouseY, _size: 0.02, _rotSpeed: 0.2, _lifetime: -1, _rotSpeed: 0})
+let cursor = new Cursor({ _x: mouseX, _y: mouseY, _size: 40, _rotSpeed: 0.2, _lifetime: -1, _rotSpeed: 0, _colourH: 0})
 
 function canvasDraw(time) {
     let canvas = document.getElementById("background-canvas");
