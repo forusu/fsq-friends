@@ -88,6 +88,15 @@ h2 {
     text-decoration: underline;
 }
 
+.projects {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.projects:hover {
+    text-decoration: underline;
+}
+
 .hyperlinks{
     color: var(--yellow);
     text-decoration: none;
