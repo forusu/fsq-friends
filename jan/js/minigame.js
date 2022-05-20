@@ -10,12 +10,12 @@ jump=false;
 jump_buffer=0;
 
 // Player variables
-gay_ified=181;		// rainbow trail (bad for your eyes and mental health)
 xthiccness=30;		// player size on x
 
 px=py=0;			// player x and y position
 vx=vy=0;			// player x and y velocity
-gravity=10;
+gravity=0.35;			// different times or days can have different gravity
+gravmod=1;			// gravity modifier for jumps and stuff
 speed=14;
 accel=0.04;			// acceleration
 decel=0.2;			// deceleration
@@ -53,7 +53,8 @@ function inputPressed(evt) {
 			if(!jump){
 				jump_buffer = 0.075;
 			}
-			jump = true
+			gravmod = 1;
+			jump = true;
 			break;
 		// Directional Inputs
 		case 37:
@@ -71,6 +72,10 @@ function inputReleased(evt) {
 		case 38:
 			if(jump_buffer < 0.02) {
 				jump_buffer = 0;
+			}
+			// ADD CHECK FOR GROUND STATE
+			if(vy > 4) {
+				vy = 4;
 			}
 			jump = false
 			break;
@@ -98,6 +103,12 @@ function buffer() {
 }
 
 function physics() {
+	if(!jump && vy < 5) {
+		gravmod = 1.2;
+	}
+	else {
+		gravmod = 1;
+	}
 	
 	// Intended Movement and acceleration
 	var intMove = (left + right) * speed;
@@ -120,14 +131,14 @@ function physics() {
 	
 	// Gravity
 	if(py < canvas.height-45) {
-		vy -= 0.25 * delta_adjuster;
+		vy -= gravity * gravmod * delta_adjuster;
 
 	}
 	else {
 		vy = 0;
 		if(jump_buffer > 0) {
 			jump_buffer = 0
-			vy = 10;
+			vy = 12.5;
 		}
 	}
 	
