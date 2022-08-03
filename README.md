@@ -1,5 +1,5 @@
 # fsq-friends
-A little hyperspace project for me and my amazing friends!
+A little pseudo-webring / hyperspace project for me and my amazing friends!
 
 # A disclaimer
 * You are given a folder for your page, please only commit to it and it only, unless you are helping me with stuff
