@@ -59,8 +59,14 @@ footer {
     text-align: center;
 }
 
-.badges {
+.badges-container {
     padding: 10px;
+}
+
+.badge {
+    border:0;
+    width:88px;
+    height:31px;
 }
 
 .fsq-hyperspace-container {
