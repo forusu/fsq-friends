@@ -71,7 +71,13 @@ class ImageRenderer{
     draw(ctx, x,  y, size, angle){
         let imageWidth = this.image.width * size
         let imageHeight =this.image.height * size
-        ctx.drawImage(this.image, x-imageWidth/2, y-imageHeight/2, imageWidth, imageHeight)
+        ctx.save()
+
+        ctx.translate(x, y)
+        ctx.rotate(angle*Math.PI/180)
+        ctx.drawImage(this.image, -imageWidth/2, -imageHeight/2, imageWidth, imageHeight)
+
+        ctx.restore()
     }
 
 }
