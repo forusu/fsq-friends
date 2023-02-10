@@ -92,6 +92,7 @@ nav{
     background-color: #c4c4c4;
     transition: 500ms cubic-bezier(0.570, -0.500, 0.480, 1.460);
     transform: translateX(-300px);
+    z-index: 100;
 }
 
 .nav-translated{
@@ -112,6 +113,8 @@ nav a:hover{
 }
 
 #navigation-toggle{
+    cursor: pointer;
+    z-index: 100;
     position: fixed;
     bottom: 30px;
     left: 30px;
@@ -121,6 +124,7 @@ nav a:hover{
     border: none;
     padding: 5px;
 }
+
 #navigation-toggle svg{
     transform: rotate(90deg);
     width: 100%;
@@ -170,6 +174,7 @@ nav a:hover{
 
 
 .album-display{
+    max-width: 1056px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -202,7 +207,10 @@ nav a:hover{
 }
 
 #background-canvas{
+    pointer-events: none;
+    cursor: none;
     position: fixed;
-    z-index: -100;
+    z-index: 1;
+    filter: blur(2px);
 }
 

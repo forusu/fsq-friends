@@ -1,0 +1,222 @@
+
+
+
+body {
+  line-height: 1.4;
+  font-size: 11pt;
+  background-color: black;
+  background-image: url("background.JPG");
+  color: #e0e0e0;
+  font-family: "Consolas","Lucida Console", Monaco, monospace;
+  margin: 1em auto;
+  max-width: 1100px;
+}
+
+main {
+  padding-bottom: 10px;
+}
+
+a{
+  color: #e0e0e0;
+}
+a:hover { background-color: #e0e0e0; }
+
+nav {
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+nav a {
+  color: #e0e0e0;
+  margin-top: 5px;
+  text-shadow: none;
+}
+
+nav a:hover { background-color: #e0e0e0; }
+
+nav .s {
+  background-color: #0c0c0c;
+  opacity: 1;
+}
+
+header {
+  color: #afafaf;
+  padding-top: 10px;
+  text-align: center;
+}
+.subtitle {
+	color: #a0a0a0;
+	font-size: 8pt;
+}
+header strong {
+  font-size: 26pt;
+  font-weight: normal;
+}
+footer strong {
+  font-size: 30pt;
+  font-weight: normal;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #afafaf;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+  padding: 3px;
+}
+
+h1,h2,h3{
+  /*line-height:1.2;*/
+  color: #afafaf;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.me th, .me td { padding: 2px 25px; }
+.me tr { text-align: center; }
+.wide { width: 100%; }
+.wide th, .wide td { padding: 3px 5px; }
+.wide th { width: 20%; }
+
+.categories {
+  font-size: small;
+  text-align: center;
+}
+
+.em:before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+
+.icon {
+    float: right;
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.news { overflow-y: scroll; max-height: 20em; font-size: small; }
+.lmarg { margin-left: 20px; }
+
+.container {max-width: 1100px; border-style:double; background-color:#0c0c0c; min-height:250px; }
+.content {
+max-width: 1000px; 
+margin: 1em auto; 
+padding-left: 1em;
+padding-right: 1em;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #d6d6d6;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d6d6d6;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px double #ffffff;
+  }
+
+:root {
+    --color-bg: #252a33;
+    --color-text: #eee;
+    --color-text-subtle: #a2a2a2;
+}
+
+[data-termynal] {
+    width: 750px;
+    max-width: 1100px;
+    margin: auto;
+    background: black
+    color: var(--color-text);
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    padding: 75px 45px 35px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+[data-termynal]:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+[data-termynal]:after {
+    content: 'terminal';
+    position: absolute;
+    color: white;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+[data-ty] {
+    display: block;
+    line-height: 2;
+}
+
+[data-ty]:before {
+    /* Set up defaults and ensure empty lines are displayed. */
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[data-ty="input"]:before,
+[data-ty-prompt]:before {
+    margin-right: 0.75em;
+    color: var(--color-text-subtle);
+}
+
+[data-ty="input"]:before {
+    content: '$';
+}
+
+[data-ty][data-ty-prompt]:before {
+    content: attr(data-ty-prompt);
+}
+
+[data-ty-cursor]:after {
+    content: attr(data-ty-cursor);
+    font-family: monospace;
+    margin-left: 0.5em;
+    -webkit-animation: blink 1s step-start infinite;
+            animation: blink 1s step-start infinite;
+}
+
+
+/* Cursor animation */
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
