@@ -2,117 +2,117 @@
     "pages": [
         {
             "name": "fsq",
-            "link": "./fsq/fsq.html",
+            "link": "/fsq-friends/fsq/fsq.html",
             "color": "#bf173b"
         },
         {
             "name": "evie",
-            "link": "./evie/evie.html",
+            "link": "/fsq-friends/evie/evie.html",
             "color": "#4f6456"
         },
         {
             "name": "callie",
-            "link": "./callie/callie.html",
+            "link": "/fsq-friends/callie/callie.html",
             "color": "#8600ff"
         },
         {
             "name": "isla",
-            "link": "./isla/isla.html",
+            "link": "/fsq-friends/isla/isla.html",
             "color": ""
         },
         {
             "name": "emmy",
-            "link": "./emmy/emmy.html",
+            "link": "/fsq-friends/emmy/emmy.html",
             "color": ""
         },
         {
             "name": "nat",
-            "link": "./nat/nat.html",
+            "link": "/fsq-friends/nat/nat.html",
             "color": "#ffb7c5"
         },
         {
             "name": "rewi",
-            "link": "./rewi/rewi.html",
+            "link": "/fsq-friends/rewi/rewi.html",
             "color": ""
         },
         {
             "name": "cattitan",
-            "link": "./cattitan/cattitan.html",
+            "link": "/fsq-friends/cattitan/cattitan.html",
             "color": ""
         },
         {
             "name": "jan",
-            "link": "./jan/jan.html",
+            "link": "/fsq-friends/jan/jan.html",
             "color": "darkturquoise"
         },
         {
             "name": "azzy",
-            "link": "./azzy/azzy.html",
+            "link": "/fsq-friends/azzy/azzy.html",
             "color": ""
         },
         {
             "name": "scary",
-            "link": "./scary/scary.html",
+            "link": "/fsq-friends/scary/scary.html",
             "color": ""
         },
         {
             "name": "xyno",
-            "link": "./xyno/xyno.html",
+            "link": "/fsq-friends/xyno/xyno.html",
             "color": ""
         },
         {
             "name": "seudo",
-            "link": "./seudo/seudo.html",
+            "link": "/fsq-friends/seudo/seudo.html",
             "color": ""
         },
         {
             "name": "username",
-            "link": "./username/username.html",
+            "link": "/fsq-friends/username/username.html",
             "color": ""
         },
         {
             "name": "kon",
-            "link": "./konblaser/konblaser.html",
+            "link": "/fsq-friends/konblaser/konblaser.html",
             "color": ""
         },
         {
             "name": "beetle",
-            "link": "./beetleram/beetleram.html",
+            "link": "/fsq-friends/beetleram/beetleram.html",
             "color": ""
         },
         {
             "name": "kaleetan",
-            "link": "./kaleetan/kaleetan.html",
+            "link": "/fsq-friends/kaleetan/kaleetan.html",
             "color": "#9ba1ff"
         },
         {
             "name": "mandelle",
-            "link": "./mandelle/mandelle.html",
+            "link": "/fsq-friends/mandelle/mandelle.html",
             "color": "#ff7f50"
         },
         {
             "name": "kae",
-            "link": "./kae/kae.html",
+            "link": "/fsq-friends/kae/kae.html",
             "color": "#ff33e2"
         },
         {
             "name": "gamis",
-            "link": "./gamis/gamis.html",
+            "link": "/fsq-friends/gamis/gamis.html",
             "color": ""
         },
         {
             "name": "maxweil",
-            "link": "./maxweil/maxweil.html",
+            "link": "/fsq-friends/maxweil/maxweil.html",
             "color": ""
         },
         {
             "name": "greeny",
-            "link": "./greeny/greeny.html",
+            "link": "/fsq-friends/greeny/greeny.html",
             "color": ""
         },
         {
             "name": "kalice",
-            "link": "./kalice/kalice.html",
+            "link": "/fsq-friends/kalice/kalice.html",
             "color": ""
         }
     ]
