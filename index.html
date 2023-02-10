@@ -17,36 +17,31 @@
   </head>
   
   <body>
-   <div class="main">
+    <div class="main">
 
-    <center><h1>fsq&friends</h1>
-    <p>Welcome to our tiny little hyperspace, here are our pages:</p>
-      
-      <!-- NOTE, IF ANY NEW PEOPLE JOIN AND I AM NOT AVAILABLE, PLEASE ADD THE NEW PEOPLE'S FOLDERS HERE ACCORDINGLY. -FSQ -->
+      <h1>fsq&friends</h1>
+      <p>Welcome to our tiny little hyperspace, here are our pages:</p>
 
-        <a style="color:#bf173b;" href="/fsq-friends/fsq/fsq.html">fsq</a><br>
-        <a style="color:#4f6456;" href="/fsq-friends/evie/evie.html">evie</a><br>
-        <a style="color:#8600ff;" href="/fsq-friends/callie/callie.html">callie</a><br>
-        <a href="/fsq-friends/isla/isla.html">isla</a><br>
-        <a href="/fsq-friends/emmy/emmy.html">emmy</a><br>
-        <a style="color:#ffb7c5;" href="/fsq-friends/nat/nat.html">nat</a><br>
-        <a href="/fsq-friends/rewi/rewi.html">rewi</a><br>
-        <a href="/fsq-friends/cattitan/cattitan.html">cattitan</a><br>
-        <a style="color:darkturquoise;" href="/fsq-friends/jan/jan.html">jan</a><br>
-        <a href="/fsq-friends/azzy/azzy.html">azzy</a><br>
-        <a href="/fsq-friends/scary/scary.html">scary</a><br>
-        <a href="/fsq-friends/xyno/xyno.html">xyno</a><br>
-        <a href="/fsq-friends/seudo/seudo.html">seudo</a><br>
-        <a href="/fsq-friends/username/username.html">username</a><br>
-        <a href="/fsq-friends/konblaser/konblaser.html">kon</a><br>
-        <a href="/fsq-friends/beetleram/beetleram.html">beetle</a><br>
-        <a style="color:#9ba1ff;" href="/fsq-friends/kaleetan/kaleetan.html">kaleetan</a><br>
-        <a style="color:#ff7f50;" href="/fsq-friends/mandelle/mandelle.html">mandelle</a><br>
-        <a style="color:#ff33e2;" href="/fsq-friends/kae/kae.html">kae</a><br>
-        <a href="/fsq-friends/gamis/gamis.html">gamis</a><br>
-        <a href="/fsq-friends/maxweil/maxweil.html">maxweil</a><br>
-        <a href="/fsq-friends/greeny/greeny.html">greeny</a><br>
-        <a href="/fsq-friends/kalice/kalice.html">kalice</a><br>
+      <nav id="pages-list"></nav>
+
+      <script>
+        let pageList = [];
+        fetch('pages.json')
+          .then((response) => response.json())
+          .then((data) => {
+            for (var i = 0; i < data.pages.length; i++) {
+              pageList.push(data.pages[i]);
+            }
+            for (var i = 0; i < pageList.length; i++) {
+              const pageLinks = document.createElement("a");
+              pageLinks.setAttribute("href", pageList[i].link);
+              pageLinks.setAttribute("style", `color: ${pageList[i].color}`);
+              pageLinks.innerHTML = pageList[i].name;
+              document.getElementById("pages-list").appendChild(pageLinks);
+              document.getElementById("pages-list").appendChild(document.createElement("br"));
+            }
+          })
+      </script>
     
     </div>
     
@@ -54,11 +49,11 @@
       
       <!-- NOTE, IF YOU WISH TO USE THE NOTICE BOARD, PLEASE IDENTIFY WHO YOU ARE IN THE CONTINUITY OF YOUR NOTICE FOR CLARITY, PLEASE USE IT FOR GOOD <3 -FSQ -->
       <!-- TO ADD A NOTE, ADD A <LI> ITEM INSIDE OF THE <UL> BLOCK, DON'T, BY NO MEANS DO NOT FORGET TO CLOSE THE LI TAG WITH </LI>-->
-        <p>Notice board:</p>
-        <ul>
-            <li>If you wish for a custom link colour, please let me know asap [fsq]</li>
-            <li>Badges are in!! Feel free to use them over at the badges directory! [fsq]</li>
-        </ul>
+      <p>Notice board:</p>
+      <ul>
+        <li>If you wish for a custom link colour, please let me know asap [fsq]</li>
+        <li>Badges are in!! Feel free to use them over at the badges directory! [fsq]</li>
+      </ul>
 
     </div>  
     

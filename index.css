@@ -51,6 +51,10 @@ a:hover {
     opacity: 50%;
 }
 
+.main {
+    text-align: center;
+}
+
 .notice-brd {
     padding: 1vw;
     background-color:#242424;
