@@ -1,1 +1,48 @@
-1
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>maxweil</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="maxweil.css">
+        <link id="icon" rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="icon"><img style="border-radius: 50%" alt="icon" src="icon.png" width="128" height="128"></div>
+                <div id="termynal"></div>
+                <script src="termynal.js"></script>
+                <script>
+                  var termynal = new Termynal('#termynal', {
+                    typeDelay: 40,
+                    lineDelay: 700,
+                    cursor: '_',
+                    lineData: [
+                      { type: 'input', value: 'load bio maxweil' },
+                      { type: 'value', value: 'Requesting classified information. Authentication required.'},
+                      { type: 'value', prompt: 'Please enter password:'},
+                      { type: 'input', prompt:'',typeDelay:150, preDelay:2500, value: '************' },
+                      { value: 'Authenticated. Forwarding request.'},
+                      { type: 'progress', progressChar: '#' },
+                      { value: 'Done!'},
+                      { type: 'input', typeDelay:50, preDelay:1000, value: 'print bio maxweil' },
+                      { value: 'Processing print run.',},
+                      { type: 'progress', progressChar: '#' },
+                      { value: '=========================================================='},
+                      { prompt: '>>>',value: 'alias: maxweil'},
+                      { prompt: '>>>',value: 'description: a 25 year old internet nerd.'},
+                      { prompt: '>>>',value: 'occupation: software developer'},
+                      { prompt: '>>>',value: 'hobbies: photography, gaming, reading, writing, tabletop, camping'},
+                      { prompt: '>>>',value: 'likes: fashion, literature, anime, finance, baseball, outdoors'},
+                      { prompt: '>>>',value: 'last known address: <a href=https://maxweil.com>maxweil.com</a>'},
+                    ]
+                  });
+                </script>
+            </div>
+        </div>
+        <footer>
+            <a href="/fsq-friends/">&#60;home&#62;</a> <a href="/fsq-friends/random.html">&#60;???&#62;</a>
+        </footer>
+    </body>
+    
+</html>
