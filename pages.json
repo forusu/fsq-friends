@@ -2,117 +2,117 @@
     "pages": [
         {
             "name": "fsq",
-            "link": "/fsq/fsq.html",
+            "link": "./fsq/fsq.html",
             "color": "#bf173b"
         },
         {
             "name": "evie",
-            "link": "/evie/evie.html",
+            "link": "./evie/evie.html",
             "color": "#4f6456"
         },
         {
             "name": "callie",
-            "link": "/callie/callie.html",
+            "link": "./callie/callie.html",
             "color": "#8600ff"
         },
         {
             "name": "isla",
-            "link": "/isla/isla.html",
+            "link": "./isla/isla.html",
             "color": ""
         },
         {
             "name": "emmy",
-            "link": "/emmy/emmy.html",
+            "link": "./emmy/emmy.html",
             "color": ""
         },
         {
             "name": "nat",
-            "link": "/nat/nat.html",
+            "link": "./nat/nat.html",
             "color": "#ffb7c5"
         },
         {
             "name": "rewi",
-            "link": "/rewi/rewi.html",
+            "link": "./rewi/rewi.html",
             "color": ""
         },
         {
             "name": "cattitan",
-            "link": "/cattitan/cattitan.html",
+            "link": "./cattitan/cattitan.html",
             "color": ""
         },
         {
             "name": "jan",
-            "link": "/jan/jan.html",
+            "link": "./jan/jan.html",
             "color": "darkturquoise"
         },
         {
             "name": "azzy",
-            "link": "/azzy/azzy.html",
+            "link": "./azzy/azzy.html",
             "color": ""
         },
         {
             "name": "scary",
-            "link": "/scary/scary.html",
+            "link": "./scary/scary.html",
             "color": ""
         },
         {
             "name": "xyno",
-            "link": "/xyno/xyno.html",
+            "link": "./xyno/xyno.html",
             "color": ""
         },
         {
             "name": "seudo",
-            "link": "/seudo/seudo.html",
+            "link": "./seudo/seudo.html",
             "color": ""
         },
         {
             "name": "username",
-            "link": "/username/username.html",
+            "link": "./username/username.html",
             "color": ""
         },
         {
             "name": "kon",
-            "link": "/konblaser/konblaser.html",
+            "link": "./konblaser/konblaser.html",
             "color": ""
         },
         {
             "name": "beetle",
-            "link": "/beetleram/beetleram.html",
+            "link": "./beetleram/beetleram.html",
             "color": ""
         },
         {
             "name": "kaleetan",
-            "link": "/kaleetan/kaleetan.html",
+            "link": "./kaleetan/kaleetan.html",
             "color": "#9ba1ff"
         },
         {
             "name": "mandelle",
-            "link": "/mandelle/mandelle.html",
+            "link": "./mandelle/mandelle.html",
             "color": "#ff7f50"
         },
         {
             "name": "kae",
-            "link": "/kae/kae.html",
+            "link": "./kae/kae.html",
             "color": "#ff33e2"
         },
         {
             "name": "gamis",
-            "link": "/gamis/gamis.html",
+            "link": "./gamis/gamis.html",
             "color": ""
         },
         {
             "name": "maxweil",
-            "link": "/maxweil/maxweil.html",
+            "link": "./maxweil/maxweil.html",
             "color": ""
         },
         {
             "name": "greeny",
-            "link": "/greeny/greeny.html",
+            "link": "./greeny/greeny.html",
             "color": ""
         },
         {
             "name": "kalice",
-            "link": "/kalice/kalice.html",
+            "link": "./kalice/kalice.html",
             "color": ""
         }
     ]
