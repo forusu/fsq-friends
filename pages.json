@@ -16,11 +16,6 @@
             "color": "#8600ff"
         },
         {
-            "name": "isla",
-            "link": "/fsq-friends/isla/isla.html",
-            "color": ""
-        },
-        {
             "name": "emmy",
             "link": "/fsq-friends/emmy/emmy.html",
             "color": ""
@@ -29,11 +24,6 @@
             "name": "nat",
             "link": "/fsq-friends/nat/nat.html",
             "color": "#ffb7c5"
-        },
-        {
-            "name": "rewi",
-            "link": "/fsq-friends/rewi/rewi.html",
-            "color": ""
         },
         {
             "name": "cattitan",
@@ -46,28 +36,13 @@
             "color": "darkturquoise"
         },
         {
-            "name": "azzy",
-            "link": "/fsq-friends/azzy/azzy.html",
-            "color": ""
-        },
-        {
             "name": "scary",
             "link": "/fsq-friends/scary/scary.html",
             "color": ""
         },
         {
-            "name": "xyno",
-            "link": "/fsq-friends/xyno/xyno.html",
-            "color": ""
-        },
-        {
             "name": "seudo",
             "link": "/fsq-friends/seudo/seudo.html",
-            "color": ""
-        },
-        {
-            "name": "username",
-            "link": "/fsq-friends/username/username.html",
             "color": ""
         },
         {
@@ -98,12 +73,12 @@
         {
             "name": "gamis",
             "link": "/fsq-friends/gamis/gamis.html",
-            "color": ""
+            "color": "#9146ff"
         },
         {
             "name": "maxweil",
             "link": "/fsq-friends/maxweil/maxweil.html",
-            "color": ""
+            "color": "#ffffff"
         },
         {
             "name": "greeny",
