@@ -12,15 +12,11 @@
     <p>If you're reading this, either i'm bad at code, your internet sucks, or you have javascript turned off</p>
 
     <script>
-        let pageList = [];
         fetch('pages.json')
             .then((response) => response.json())
             .then((data) => {
-                for (var i = 0; i < data.pages.length; i++) {
-                    pageList.push(data.pages[i].link);
-                }
-                const pageIndex = Math.floor(Math.random() * pageList.length)
-                window.location.replace(`${pageList[pageIndex]}`);
+                const pageIndex = Math.floor(Math.random() * data.pages.length)
+                window.location.replace(`${data.pages[pageIndex].link}`);
             });
     </script>
 </body>
