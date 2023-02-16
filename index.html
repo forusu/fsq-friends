@@ -25,19 +25,14 @@
       <nav id="pages-list"></nav>
 
       <script>
-        let pageList = [];
         fetch('pages.json')
           .then((response) => response.json())
           .then((data) => {
-            for (var i = 0; i < data.pages.length; i++) {
-              pageList.push(data.pages[i]);
-            }
+            const pageList = data.pages;
             for (var i = 0; i < pageList.length; i++) {
-              const pageLinks = document.createElement("a");
-              pageLinks.setAttribute("href", pageList[i].link);
-              pageLinks.setAttribute("style", `color: ${pageList[i].color}`);
-              pageLinks.innerHTML = pageList[i].name;
-              document.getElementById("pages-list").appendChild(pageLinks);
+              let pageLink = Object.assign(document.createElement("a"), {href: pageList[i].link}, {style: `color: ${pageList[i].color}`});
+              pageLink.append(document.createTextNode(pageList[i].name));
+              document.getElementById("pages-list").appendChild(pageLink);
               document.getElementById("pages-list").appendChild(document.createElement("br"));
             }
           })
