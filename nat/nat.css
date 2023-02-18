@@ -69,11 +69,11 @@ footer {
     height:31px;
 }
 
-.fsq-hyperspace-container {
+.ff-webring-container {
     padding: 10px;
 }
 
-.fsq-hyperspace-nav {
+.ff-webring-nav {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     list-style: none;
