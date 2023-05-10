@@ -1,7 +1,5 @@
-const webringClassName = (name) => (`ff-webring-${name}`);
-
 const createPageLinkElement = (elementText, navDirection, site) => {
-    let element = Object.assign(document.createElement("a"), {href: site.link}, {className: webringClassName(navDirection)});
+    let element = Object.assign(document.createElement("a"), {href: site.link}, {className: `ff-webring-${navDirection}`});
     element.append(document.createTextNode(elementText));
     return element;
 }
