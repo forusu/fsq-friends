@@ -18,7 +18,7 @@
         {
             "name": "emmy",
             "link": "/fsq-friends/emmy/emmy.html",
-            "color": ""
+            "color": "#3daee7"
         },
         {
             "name": "nat",
@@ -34,11 +34,6 @@
             "name": "jan",
             "link": "/fsq-friends/jan/jan.html",
             "color": "darkturquoise"
-        },
-        {
-            "name": "scary",
-            "link": "/fsq-friends/scary/scary.html",
-            "color": ""
         },
         {
             "name": "seudo",
@@ -80,15 +75,5 @@
             "link": "/fsq-friends/maxweil/maxweil.html",
             "color": "#ffffff"
         },
-        {
-            "name": "greeny",
-            "link": "/fsq-friends/greeny/greeny.html",
-            "color": ""
-        },
-        {
-            "name": "kalice",
-            "link": "/fsq-friends/kalice/kalice.html",
-            "color": ""
-        }
     ]
 }
