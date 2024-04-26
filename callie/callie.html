@@ -1,11 +1,15 @@
-
 <!Doctype Html>  
 
 <style type = "text/css">  
-
-    #KITTIES {  
-        border: 5px solid rgb(134, 0, 255); 
+    #thekitters {  
+        transition: opacity 1s ease-in-out;
+        display: block; 
     }  
+
+    .img-wrapper {
+        border: 5px solid rgb(134, 0, 255);
+        display: inline-block;
+    }
 
     body {
         top:0;
@@ -32,14 +36,49 @@
 </style>  
 
 <html>     
-        <head><title>callie's page</title><link rel="icon" type="image/x-icon" href="kitten.ico"></head>  
+    <head>
+        <title>callie's page</title>
+        <link id="favicon" rel="icon" type="image/x-icon" href="k1.png">
+        <script>
+            const arrImgs = ['k1.png', 'k2.png', 'k3.png', 'k4.png', 'k5.png', 'k6.png', 'k7.png', 'k8.png', 'k9.png'];
+            let nIndex = 0;
+        
+            const changeImage = () => {
+                const imgElement = document.getElementById('thekitters');
+                imgElement.style.opacity = '0';
+                setTimeout(() => {
+                    imgElement.src = arrImgs[nIndex];
+                    imgElement.style.opacity = '1';
+                    changeFavicon(arrImgs[nIndex]);
+                    nIndex = (nIndex + 1) % arrImgs.length;
+                }, 1000);
+            };
+        
+            const changeFavicon = (newFavicon) => {
+                document.getElementById('favicon').href = newFavicon;
+            };
+        
+            document.addEventListener('DOMContentLoaded', () => {
+                const imgElement = document.getElementById('thekitters');
+                imgElement.src = arrImgs[nIndex];
+                imgElement.style.opacity = '1';
+                changeFavicon(arrImgs[nIndex]);
+                nIndex = (nIndex + 1) % arrImgs.length;
+            });
+        
+            setInterval(changeImage, 5500);
+        </script>
+    </head>  
 
-        <body>   
-            <table id="wrapper">
-                <tr>
-                  <td><img src="kitties.png" id="KITTIES" alt="" width="400" height="400"/></td>
-                </tr>
-              </table>
-        </body>   
-</html>  
-
+    <body>   
+        <table id="wrapper">
+            <tr>
+              <td>
+                <div class="img-wrapper">
+                 <img id="thekitters" alt="" width="400" height="400"/>
+                </div>
+              </td>
+            </tr>
+          </table>
+    </body>   
+</html>
