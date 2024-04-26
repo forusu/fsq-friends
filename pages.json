@@ -75,5 +75,10 @@
             "link": "/fsq-friends/maxweil/maxweil.html",
             "color": "#ffffff"
         }
+        {
+            "name": "turtlebole",
+            "link": "/fsq-friends/turtlebole/turtlebole.html",
+            "color": "#f5e342"
+        },
     ]
 }
