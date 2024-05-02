@@ -89,6 +89,11 @@
             "name": "nes",
             "link": "/fsq-friends/nes/nes.html",
             "color": "#ffffff"
+        },
+        {
+            "name": "louw",
+            "link": "/fsq-friends/louw/louw.html",
+            "color": "#b392ba"
         }
     ]
 }
