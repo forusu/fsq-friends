@@ -9,6 +9,7 @@ body {
     margin-right: 25vw;
     transition: .3s;
     scrollbar-color: #e0a500;
+    text-shadow: 0 3px 3px #121212;
     scrollbar-width: .5rem;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -41,6 +42,15 @@ h1 {
     box-shadow: 1vw,1vw,#000000;
 }
 
+.egg:hover {
+    transition: 2s;
+    font-size: 420%;
+}
+
+.egg {
+    transition: 2s
+}
+
 a, a:visited {
     opacity: 100%;
     color: #e0a500;
@@ -53,6 +63,7 @@ a:hover {
 
 .main {
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
 
 .notice-brd {
@@ -60,9 +71,28 @@ a:hover {
     background-color:#242424;
     color: white;
     padding-bottom: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0px 8px rgba(0, 0, 0, 0.19);
+    margin-bottom: 0;
+}
+
+.header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    background-color:#242424;
+    padding: 1vw;
+    margin: 25px;
+}
+
+hr {
+    color: #121212;
+    background-color: #121212
 }
 
 li {
+    color: #b38402;
+    padding-bottom: 5px;
+}
+
+.latest {
     color: #e0a500;
 }
 
@@ -70,9 +100,17 @@ li {
     color: #e0a500;
 }
 
+.badges {
+    padding: 10px;
+    background-color: #111111;
+    text-align: center;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 footer {
-    margin-top: 20%;
+    margin-top: 0%;
     bottom: 5%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #1c1c1c;
     padding: 2px;
     text-align: center;
