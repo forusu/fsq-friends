@@ -79,6 +79,16 @@
             "name": "turtlebole",
             "link": "/fsq-friends/turtlebole/turtlebole.html",
             "color": "#f5e342"
+        },
+        {
+            "name": "nmint",
+            "link": "/fsq-friends/nmint/nmint.html",
+            "color": "#ffffff"
+        },
+        {
+            "name": "nes",
+            "link": "/fsq-friends/nes/nes.html",
+            "color": "#ffffff"
         }
     ]
 }
