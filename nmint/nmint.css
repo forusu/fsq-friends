@@ -1,8 +1,95 @@
 body{
-	background-color: #FF6666;
+	background-image: linear-gradient(#E2251F, #000000);
 }
 
-.temp{
-    display: block;
-    text-align: center;    
+a{
+    color: #AEAEFA;
+    text-decoration: none;
+}
+
+table{
+    width:100%;
+    border: 4px solid black;
+    color: #ffffff;
+    text-align: center;
+}
+
+table td{
+    border: 2px solid #0e0e0f;
+}
+
+.header{
+    background-color: #1A1A1A;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Courier New';
+    padding-top: 8px;
+    box-shadow: 10px 10px 5px #000000;
+    color: #EEBCBA
+}
+
+.block{
+    background-color: #262626;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: 'Courier New';
+    padding: 20px;
+    padding-left:36px;
+    box-shadow: 10px 10px 5px #000000;
+    color: #ffffff
+}
+
+.gallery{
+    background-color: #363636;
+    text-align: center;
+}
+
+.gallery img{
+    width: 256px;
+    height: 256px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.discography{
+    background-color: #363636;
+}
+
+.release{
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.release img{
+    width: 128px;
+}
+
+.tracklist{
+    text-align: left;
+}
+
+.ico_bc{
+    background-image: url("img/ico_bc.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100;
+    width: 32px;
+    height: 32px;
+    color: #00000000;
+}
+
+.ico_yt{
+    background-image: url("img/ico_yt.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    color: #00000000;
 }
