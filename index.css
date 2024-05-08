@@ -44,7 +44,8 @@ h1 {
 
 .egg:hover {
     transition: 2s;
-    font-size: 420%;
+    /* font-size: 420% */
+    transform: scale(1.5);
 }
 
 .egg {
