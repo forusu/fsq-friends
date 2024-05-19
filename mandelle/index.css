@@ -2,6 +2,7 @@
 p {
 
   font-weight: bold;
+  font-family: Times;
   font-size: 25px;
   color: rgb(0, 0, 0);
 }
@@ -15,7 +16,7 @@ margin-left: 11px;
 }
 
 body {
-  background-color: rgb(255, 233, 189);
+  background-color: rgb(66, 62, 58);
 }
 
 * {
