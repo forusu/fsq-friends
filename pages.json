@@ -69,6 +69,11 @@
             "name": "maxweil",
             "link": "../maxweil/maxweil.html",
             "color": "#ffffff"
+        },
+        {
+            "name": "sopharus",
+            "link": "../sopharus/sopharus.html",
+            "color": "#fff8f6"
         }
     ]
 }
