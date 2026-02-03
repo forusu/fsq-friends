@@ -66,34 +66,9 @@
             "color": "#ff33e2"
         },
         {
-            "name": "gamis",
-            "link": "../gamis/gamis.html",
-            "color": "#9146ff"
-        },
-        {
             "name": "maxweil",
             "link": "../maxweil/maxweil.html",
             "color": "#ffffff"
-        },
-        {
-            "name": "turtlebole",
-            "link": "../turtlebole/turtlebole.html",
-            "color": "#f5e342"
-        },
-        {
-            "name": "nmint",
-            "link": "../nmint/nmint.html",
-            "color": "#9ff9aa"
-        },
-        {
-            "name": "nes",
-            "link": "../nes/nes.html",
-            "color": "#ffffff"
-        },
-        {
-            "name": "louw",
-            "link": "../louw/louw.html",
-            "color": "#b392ba"
         }
     ]
 }
