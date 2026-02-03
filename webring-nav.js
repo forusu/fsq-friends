@@ -5,7 +5,7 @@ const createPageLinkElement = (elementText, navDirection, site) => {
 }
 
 const renderPageLinkElement = async (elementText, navDirection, scriptElement) => {
-    const data = await fetch("https://forusu.github.io/fsq-friends/pages.json")
+    const data = await fetch("../pages.json")
         .then((response) => response.json());
     const pageList = data.pages;
     const index = pageList.findIndex((site) => site.link == window.location.pathname);
