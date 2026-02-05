@@ -74,6 +74,11 @@
             "name": "sopharus",
             "link": "../sopharus/sopharus.html",
             "color": "#fff8f6"
+        },
+        {
+            "name": "trollman",
+            "link": "../trollman/trollman.html",
+            "color": "#39C5BB"
         }
     ]
 }
