@@ -1,0 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title {
+    border-bottom: 5px dashed black;
+    width: 40%;
+}
