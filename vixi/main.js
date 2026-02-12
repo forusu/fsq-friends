@@ -1,4 +1,4 @@
-const apiURL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks";
+const apiURL = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks";
 const apiFormat = "json";
 const apiUser = "npenullpointer";
 // shhh,,, pretend you didn't see this, it's not like it's a secret or anything,,,,
