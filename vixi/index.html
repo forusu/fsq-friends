@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>da hutch,,,</title>
+        <style> 
+            @font-face {
+                font-family: "SF Pro Display";
+                src: url('fonts/SF-Pro-Text-Medium.otf');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "Fairfax";
+                src: url('fonts/FairfaxItalic.ttf');
+                font-weight: normal;
+                font-style: italic;
+            }
+            :root {
+                --pink: #FA3867;
+                --fg: #FBFCFE;
+                --bg: #17181C;
+                --grey: #959699;
+                --low-opacity-bg: color-mix(in oklab, var(--bg) 50%, transparent 50%);
+                --wall: url(assets/dark.webp);
+            }
+            @media (prefers-color-scheme: light) {
+                :root {
+                    --pink: #FA3867;
+                    --fg: #17181C;
+                    --bg: #FBFCFE;
+                    --grey: #333438;
+                    --low-opacity-bg: color-mix(in oklab, var(--bg) 50%, transparent 50%);
+                    --wall: url(assets/light.webp);
+                }
+            }
+            html {
+                background: var(--wall) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: coveri;
+                user-select: none;
+            }
+            body {
+                margin: 0;
+            }
+            .gradient {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: linear-gradient(180deg, var(--low-opacity-bg) 0%, var(--bg) 100%);
+                z-index: -1;
+            }
+            .tile {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: url(data:image/svg+xml,%3Csvg%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M24%2023V22V21V20H23H22H21H20V21V22V23V24H21H22H23H24V23Z%22%20fill%3D%22%23FBFCFE80%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M48%2020V21V22V23V24H47H46H45H44V23V22V21V20H45H46H47H48Z%22%20fill%3D%22%23FBFCFE80%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M44%2044V45V46V47V48H45H46H47H48V47V46V45V44H47H46H45H44Z%22%20fill%3D%22%23FBFCFE80%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M24%2044V45V46V47V48H23H22H21H20V47V46V45V44H21H22H23H24Z%22%20fill%3D%22%23FBFCFE80%22%2F%3E%3C%2Fsvg%3E%0A);
+                z-index: 1;
+                mix-blend-mode: overlay;
+                background-position: center;
+            }
+            .bigcontainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 23vh 23vw;
+                gap: 32px;
+                position: absolute;
+                width: calc(100vw - 46vw);
+                height: calc(100vh - 46vh);
+                left: 0px;
+                top: 0px;
+                filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+                color: var(--fg);
+                z-index: 2;
+                transition: all 0.2s cubic-bezier(0.2, 0.0, 0, 1.0);
+            }
+            .bigcontainer p {
+                font-family: "SF Pro Display", sans-serif;
+                margin: 0;
+            }
+            .bigcontainer span:hover {
+                transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+                filter: drop-shadow(0px 0px 8px color-mix(in oklab, var(--pink) 50%, transparent 50%));
+            }
+            .profilecontainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            .profile, .nowplaying {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            .profile {
+                align-items: flex-end;
+                gap: 32px;
+            }
+            .profile p {
+                font-size: 32px;
+            }
+            .profile h1 {
+                margin: 0;
+                font-family: "Fairfax", serif;
+                font-weight: normal;
+                font-size: 120px;
+                line-height: 120px;
+                color: var(--pink);
+                transition: all 0.2s cubic-bezier(0.2, 0.0, 0, 1.0);
+            }
+            .profile h1:hover {
+                transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+                filter: drop-shadow(0px 0px 8px color-mix(in oklab, var(--pink) 50%, transparent 50%));
+            }
+            .profile img {
+                border-radius: 32px;
+            }
+            .nowplaying {
+                align-items: center;
+                gap: 8px;
+                font-size: 20px;
+            }
+            .nowplaying p {
+                transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+            }
+            .hehehehe {
+                color: var(--pink);
+            }
+            .navigationcontainer, .webringnavigationcontainer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 32px;
+                font-size: 20px;
+            }
+            .navigationcontainer a, .webringnavigationcontainer a {
+                font-family: "SF Pro Display", sans-serif;
+                text-decoration: none;
+                color: var(--fg);
+                position: relative;
+                transition: all 0.2s cubic-bezier(0.2, 0.0, 0, 1.0);
+            }
+            .navigationcontainer a:hover, .webringnavigationcontainer a:not(.inactive):hover {
+                color: var(--pink);
+                filter: drop-shadow(0px 0px 8px color-mix(in oklab, var(--pink) 50%, transparent 50%));
+                transition: all 0.4s cubic-bezier(0.2, 0.0, 0, 1.0);
+            }
+            .contentcontainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .content p {
+                font-size: 32px;
+            }
+            .heartpoints p {
+                font-size: 20px !important;
+                margin-left: 16px;
+            }
+            .heartpoints {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .active {
+                color: var(--pink) !important;
+            }
+            .inactive {
+                text-decoration: line-through !important;
+                color: var(--grey) !important;
+                cursor: not-allowed !important;
+            }
+            .inactive:hover {
+                filter: unset !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bigcontainer">
+            <div class="profilecontainer">
+                <div class="profile">
+                    <img src="assets/pfp.webp" alt="she's literally me frfr,,," width="142" height="142"></img>
+                    <div class="profiletextcontainer">
+                        <h1>vixi</h1>
+                        <p>stupid nerd,,,</p>
+                    </div>
+                </div>
+                <div class="nowplaying">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="3.26688" height="16" rx="1.63344" transform="matrix(-1 0 0 1 8.63672 0)" fill="#FA3867"/>
+                        <rect width="3.26688" height="9.88235" rx="1.63344" transform="matrix(-1 0 0 1 14.002 3.05859)" fill="#FA3867"/>
+                        <rect width="3.26688" height="9.88235" rx="1.63344" transform="matrix(-1 0 0 1 3.26758 3.05859)" fill="#FA3867"/>
+                    </svg>
+                    <p style="color: var(--grey);" id="lastfm">fetching,,,,</p>
+                </div>
+            </div>
+            <div class="navigationcontainer">
+                <a class="active"><span class="hehehehe">♡</span> home</a>
+                <a class="inactive"><span class="inactive">♡</span> projects</a>
+                <a class="inactive"><span class="inactive">♡</span> contact</a>
+            </div>
+            <div class="contentcontainer">
+                <div class="content">
+                    <p>hi, i’m <span class="hehehehe">vixima</span>! i’m a tech obsessed weirdo with way too many hobbies.</p>
+                    <div class="heartpoints">
+                        <p><span class="hehehehe">♡</span> bunnypilled graphic designer</p>
+                        <p><span class="hehehehe">♡</span> bad programmer</p>
+                        <p><span class="hehehehe">♡</span> professional dumbass</p>
+                        <p><span class="hehehehe">♡</span> jack of all trades, master of none</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="font-size: 20px;">no projects or contact page yet,,, too lazy,,,,</p>
+                </div>
+            </div>
+            <div class="webringnavigationcontainer">
+                <a href="https://friendsof.falsey.mom/trollman/trollman.html"><span class="hehehehe"><</span> back</a>
+                <a href="https://friendsof.falsey.mom/">index</a>
+                <a href="https://friendsof.falsey.mom/random.html">random</a>
+                <p class="inactive">next ></p>
+            </div>
+            <div class="webringnavigationcontainer">
+                <img src="https://github.com/forusu/fsq-friends/blob/main/badges/fnf.gif?raw=true"></img>
+            </div>
+        </div>
+        <div class="tile"></div>
+        <div class="gradient"></div>
+    </body>
+    <script src="main.js"></script> 
+</html>

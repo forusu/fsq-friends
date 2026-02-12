@@ -79,6 +79,11 @@
             "name": "trollman",
             "link": "../trollman/trollman.html",
             "color": "#39C5BB"
+        },
+        {
+            "name": "vixi",
+            "link": "../vixi/vixi.html",
+            "color": "#FA3867"
         }
     ]
 }
