@@ -1,7 +1,8 @@
 const apiURL = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks";
 const apiFormat = "json";
 const apiUser = "npenullpointer";
-const apiKey = process.env.VIXIS_LASTFM_API_KLEY;
+// shhh,,, pretend you didn't see this, it's not like it's a secret or anything,,,,
+const apiKey = f5432a0c6a4096228ee4ece6850d0171;
 const apiResultLimit = 2;
 const nowPlayingElement = document.getElementById("lastfm");
 
