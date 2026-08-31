@@ -1,0 +1,43 @@
+body {
+    background-color: #11111b;
+    @font-face{
+        font-family: 'JetBrainsMono';
+        src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    text-align: center;
+    font-size: 16px;
+    color: #cdd6f4
+}
+
+.home {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #cba6f7;
+    font-size: 22px;
+}
+
+.header {
+    font-size: 12px;
+}
+
+img {
+    border: 5px solid #cba6f7;
+}
+
+/* FROM FINESSE */
+a, a:visited {
+    opacity: 100%;
+    color:  #f38ba8;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
